@@ -140,10 +140,11 @@ h1, h2, h3 {
     display: flex;
     margin-bottom: 3rem;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     transition: all 0.3s;
     position: relative;
+    width: 100%;
 }
 
 .input-label {
@@ -396,6 +397,10 @@ h1, h2, h3 {
     margin: 0;
 }
 
+.form .btn[type="submit"] {
+    align-self: flex-end;
+}
+
 .submit-btn {
     margin: 5rem;
 }
@@ -403,12 +408,6 @@ h1, h2, h3 {
 @media screen and (min-width: 1024px) {
     .form-block {
         background-color: var(--light-color);
-    }
-
-    .form {
-        background-color: #fff;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        padding: 5rem 4rem;
     }
 
     .submit-btn {

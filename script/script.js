@@ -97,4 +97,11 @@ sidenav.querySelectorAll('a.nav-link').forEach(navlink => {
     });
 });
 
+sidenav.querySelectorAll('.collapsible').forEach(item => {
+    const active = item.querySelector('.active');
+    if (active !== null) {
+        item.querySelector('.nav-link').classList.add('active');
+        item.classList.add("show");
+    }
+});
 
